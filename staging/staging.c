@@ -7,8 +7,7 @@
 // adjust size to the expected payload size
 unsigned char buf[1]; 
 
-DWORD dl_to_buffer(const wchar_t* host, INTERNET_PORT port, const wchar_t* path, unsigned char* outBuf, DWORD outBufSize)
-{
+DWORD dl_to_buffer(const wchar_t* host, INTERNET_PORT port, const wchar_t* path, unsigned char* outBuf, DWORD outBufSize) {
     DWORD counter = 0;
     DWORD dwSize = 0;
     DWORD dwDownloaded = 0;
@@ -104,3 +103,4 @@ int main() {
 
     return 0;
 }
+
