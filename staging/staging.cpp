@@ -77,19 +77,12 @@ void dl_to_buffer(const wchar_t* host, INTERNET_PORT port) {
 		} while (dwSize > 0);
 	}
 
-	if (hRequest) { 
-    	WinHttpCloseHandle(hRequest); 
-	}
-	if (hConnect) { 
-    	WinHttpCloseHandle(hConnect); 
-	}
-	if (hSession) { 
-    	WinHttpCloseHandle(hSession); 
-	}
+	if (hRequest) { WinHttpCloseHandle(hRequest); }
+	if (hConnect) { WinHttpCloseHandle(hConnect); }
+	if (hSession) { WinHttpCloseHandle(hSession); }
 }
 
 int main() {
 	dl_to_buffer(L"192.168.10.10", 7777);
 	return 0;
-
 }
