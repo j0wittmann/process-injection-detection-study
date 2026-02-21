@@ -8,4 +8,4 @@ The following techniques are implemented:
 - Startup Folder
 - Scheduled Task (daily trigger)
 
-These techniques were applied to payloads that had already successfully evaded detection to analyze whether persistence mechanisms themselves influence Windows Defender’s detection behavior.
+These were applied to payloads that had already successfully evaded detection to analyze whether persistence mechanisms themselves influence Windows Defender’s detection behavior.
