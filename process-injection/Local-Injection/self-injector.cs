@@ -12,6 +12,7 @@ internal class Program {
     private static extern UInt32 WaitForSingleObject(IntPtr hHandle, UInt32 dwMilliseconds);
 
     static void Main(string[] args) {
+        // shellcode
         byte[] buf = new byte[] { 0x90 };
 
         IntPtr lpStartAddress = VirtualAlloc(IntPtr.Zero, (UInt32)buf.Length, 0x3000, 0x40);
